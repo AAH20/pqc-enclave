@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqc-enclave"
+version = "0.1.0"
+description = "Zero-Allocation Post-Quantum Cryptographic Root-of-Trust & Microsecond Key Exchange for Autonomous Fleets (FIPS 203/204)."
+readme = "README.md"
+authors = [
+  { name = "Ahmed Hassan", email = "ahmed@a2zsoc.com" }
+]
+license = { text = "Apache-2.0" }
+keywords = [
+  "post-quantum-cryptography",
+  "pqc",
+  "fips-203",
+  "fips-204",
+  "ml-kem",
+  "ml-dsa",
+  "kyber",
+  "dilithium",
+  "lattice-based-cryptography",
+  "ntt-accelerator",
+  "zero-allocation-crypto",
+  "quantum-safe-vpn",
+  "cnsa-2-0",
+  "defense-cryptography"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security :: Cryptography"
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pqc-enclave = "pqc_enclave.cli:main"
